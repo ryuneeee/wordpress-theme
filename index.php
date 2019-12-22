@@ -9,7 +9,7 @@
 </head>
 <body>
     <header>
-        <a href="/">Ryun</a>
+        <a href="/">Ryun2aa</a>
         <div class="progress-container">
             <div id="reading-scroll"></div>
         </div> 
