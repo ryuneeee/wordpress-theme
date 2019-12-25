@@ -8,7 +8,6 @@
   },
   "devDependencies": {},
   "scripts": {
-    "build": "./node_modules/node-sass/bin/node-sass main.scss style.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
