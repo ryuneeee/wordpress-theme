@@ -8,4 +8,6 @@
 
 	// Enqueue editor styles.
 	add_editor_style( 'style.css' );
+
+	add_filter( 'big_image_size_threshold', '__return_false' );
 ?>
