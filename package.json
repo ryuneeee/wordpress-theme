@@ -9,7 +9,6 @@
     "nodemon": "^2.0.2"
   },
   "scripts": {
-    "preinstall": "git config core.hooksPath hooks",
     "watch": "node-sass -w -r theme -o theme",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
