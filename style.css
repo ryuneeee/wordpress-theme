@@ -1,39 +1,3 @@
-/*
-Theme Name: ryun
-Theme URI: http://wordpress.org
-Author: the WordPress team
-Author URI: http://wordpress.org/
-Description: The 2013 theme for WordPress takes us back to the blog, featuring a full range of post formats, each displayed beautifully in their own unique way. Design details abound, starting with a vibrant color scheme and matching header images, beautiful typography and icons, and a flexible layout that looks great on any device, big or small.
-Version: 1.0
-License: GNU General Public License v2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Tags: black, brown, orange, tan, white, yellow, light, one-column, two-columns, right-sidebar, flexible-width, custom-header, custom-menu, editor-style, featured-images, microformats, post-formats, rtl-language-support, sticky-post, translation-ready
-Text Domain: twentythirteen
-
-*/
-/* General Demo Style */
-
-
-@import url('https://fonts.googleapis.com/css?family=Noto+Serif+KR&display=swap');
-
-.wp-block {
-    max-width: 60rem;
-}
-
-.wp-block[data-align=wide] {
-	padding-left: 0;
-	padding-right: 0;
-	max-width: 70%;
-}
-
-.wp-block[data-align=full] {
-	max-width: none;
-}
-
-.wp-block[data-align=full] img {
-	margin-bottom: 2rem;
-}
-
 html {
   padding: 0;
   margin: 0;
@@ -176,18 +140,17 @@ body {
         padding-right: 0; }
       body section article p.aligncenter, body section article ol.aligncenter, body section article ul.aligncenter, body section article h1.aligncenter, body section article h2.aligncenter, body section article h3.aligncenter, body section article h4.aligncenter, body section article h5.aligncenter, body section article h6.aligncenter, body section article table.aligncenter, body section article figure.aligncenter {
         max-width: 40rem; }
-      body section article p.tiny, body section article ol.tiny, body section article ul.tiny, body section article h1.tiny, body section article h2.tiny, body section article h3.tiny, body section article h4.tiny, body section article h5.tiny, body section article h6.tiny, body section article table.tiny, body section article figure.tiny {
+      body section article p.is-resized, body section article ol.is-resized, body section article ul.is-resized, body section article h1.is-resized, body section article h2.is-resized, body section article h3.is-resized, body section article h4.is-resized, body section article h5.is-resized, body section article h6.is-resized, body section article table.is-resized, body section article figure.is-resized {
         text-align: center; }
-        body section article p.tiny img, body section article ol.tiny img, body section article ul.tiny img, body section article h1.tiny img, body section article h2.tiny img, body section article h3.tiny img, body section article h4.tiny img, body section article h5.tiny img, body section article h6.tiny img, body section article table.tiny img, body section article figure.tiny img {
-          max-width: 15rem;
-          margin: 0.5rem 2rem; }
+        body section article p.is-resized img, body section article ol.is-resized img, body section article ul.is-resized img, body section article h1.is-resized img, body section article h2.is-resized img, body section article h3.is-resized img, body section article h4.is-resized img, body section article h5.is-resized img, body section article h6.is-resized img, body section article table.is-resized img, body section article figure.is-resized img {
+          width: auto;
+          max-width: 100%; }
           @media (max-width: 800px) {
-            body section article p.tiny img, body section article ol.tiny img, body section article ul.tiny img, body section article h1.tiny img, body section article h2.tiny img, body section article h3.tiny img, body section article h4.tiny img, body section article h5.tiny img, body section article h6.tiny img, body section article table.tiny img, body section article figure.tiny img {
+            body section article p.is-resized img, body section article ol.is-resized img, body section article ul.is-resized img, body section article h1.is-resized img, body section article h2.is-resized img, body section article h3.is-resized img, body section article h4.is-resized img, body section article h5.is-resized img, body section article h6.is-resized img, body section article table.is-resized img, body section article figure.is-resized img {
               margin: 2rem auto;
               padding: 0;
               left: auto;
-              right: auto;
-              max-width: 60%; } }
+              right: auto; } }
     body section article .center, body section article .subject {
       text-align: center;
       word-break: break-word; }
@@ -244,6 +207,19 @@ body {
       margin-top: 1rem;
       margin-bottom: 5rem;
       border: 0.5px solid #dd7118; }
+  body figcaption {
+    text-align: center;
+    margin-top: -3rem;
+    margin-bottom: 4rem;
+    font-size: 0.9rem;
+    color: #747474; }
+    @media (max-width: 800px) {
+      body figcaption {
+        margin-top: -2rem; } }
+  body .components-autocomplete figcaption {
+    margin-top: auto; }
+  body .is-resized figcaption {
+    margin-top: auto; }
   body .footnotes {
     margin: 4rem auto;
     max-width: 60rem;

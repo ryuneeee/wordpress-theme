@@ -1,0 +1,24 @@
+{
+  "name": "wordpress-theme",
+  "version": "1.0.0",
+  "description": "Minimal blog theme for Wordpress",
+  "main": "index.js",
+  "dependencies": {
+    "node-sass": "^4.13.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "build": "./node_modules/node-sass/bin/node-sass main.scss style.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ryuneeee/wordpress-theme.git"
+  },
+  "author": "ryuneeee",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ryuneeee/wordpress-theme/issues"
+  },
+  "homepage": "https://github.com/ryuneeee/wordpress-theme#readme"
+}
