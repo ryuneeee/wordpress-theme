@@ -3,12 +3,14 @@
   "version": "1.0.0",
   "description": "Minimal blog theme for Wordpress",
   "main": "index.js",
-  "dependencies": {
-    "node-sass": "^4.13.0"
+  "dependencies": {},
+  "devDependencies": {
+    "node-sass": "^4.13.0",
+    "nodemon": "^2.0.2"
   },
-  "devDependencies": {},
   "scripts": {
     "preinstall": "git config core.hooksPath hooks",
+    "watch": "node-sass -w -r theme -o theme",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
