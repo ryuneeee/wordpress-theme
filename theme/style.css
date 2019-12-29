@@ -302,6 +302,16 @@ body .wp-block-image figcaption {
   body .wp-block-image figcaption {
     margin-top: -2rem; } }
 
+body .wp-block-gallery {
+  margin: 0px auto; }
+
+body .wp-block-gallery figure {
+  padding: 0; }
+
+body .wp-block-gallery .blocks-gallery-grid {
+  margin: 1rem;
+  max-width: none; }
+
 body .components-autocomplete figcaption {
   margin-top: auto; }
 

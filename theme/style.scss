@@ -390,6 +390,36 @@ body {
         }
     }
 
+    .wp-block-gallery {
+        margin: 0px auto;
+
+        figure {
+            padding: 0;
+        }
+
+        .blocks-gallery-grid {
+            margin: 1rem;
+            max-width: none;
+
+
+            // @media (max-width: 900px) {
+            //     display: inline;
+                
+            //     .blocks-gallery-item {
+            //         margin: 0;
+            //         width: 100%;
+            //         img {
+            //             flex: 1;
+            //             -o-object-fit: cover;
+            //             object-fit: cover;
+            //             margin-top: 0px;
+            //             margin-bottom: 1rem;
+            //         }
+            //     }
+            // }
+        }
+    }
+
     .components-autocomplete figcaption {
         margin-top: auto; 
     }
