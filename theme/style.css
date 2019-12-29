@@ -302,17 +302,8 @@ body .wp-block-image figcaption {
   body .wp-block-image figcaption {
     margin-top: -2rem; } }
 
-@media (max-width: 400px) {
-  body .wp-block-gallery {
-    margin: 0 auto; } }
-
-@media (min-width: 400px) and (max-width: 800px) {
-  body .wp-block-gallery {
-    margin: 1rem auto; } }
-
-@media not all and (max-width: 800px) {
-  body .wp-block-gallery {
-    margin: 2rem auto; } }
+body .wp-block-gallery {
+  margin: 0px auto; }
 
 body .wp-block-gallery figure {
   max-width: none;
