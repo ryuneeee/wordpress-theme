@@ -12,15 +12,33 @@ html {
 body::-webkit-scrollbar {
   display: none; }
 
+.editor-post-title__input {
+  text-align: center; }
+
+.block-editor-block-list__layout {
+  padding: 0px; }
+
 .block-editor-block-list__layout .wp-block {
-  max-width: 60rem; }
+  max-width: 54rem; }
+
+.block-editor-block-list__layout .wp-block[data-align=wide] {
+  max-width: 1100px; }
+
+.block-editor-block-list__layout .wp-block[data-align=full] {
+  max-width: 100%; }
+
+.block-editor-block-list__layout .block-editor-block-list__block[data-align=full] {
+  margin: 0px; }
 
 .block-editor-block-list__layout .wp-block-image {
-  margin: 4rem auto; }
+  margin: 2rem auto; }
 
 .block-editor-block-list__layout .wp-block-quote {
-  margin: 4rem auto;
+  margin: 2rem auto;
   border-left: 0px; }
+
+.editor-post-title .wp-block {
+  max-width: 54rem; }
 
 body {
   color: #444;
@@ -127,7 +145,7 @@ body section article ol li, body section article ul li {
 body section article p, body section article ol, body section article ul, body section article h1, body section article h2, body section article h3, body section article h4, body section article h5, body section article h6, body section article table, body section article figure {
   margin-left: auto;
   margin-right: auto;
-  max-width: 60rem; }
+  max-width: 54rem; }
 
 @media (max-width: 400px) {
   body section article p, body section article ol, body section article ul, body section article h1, body section article h2, body section article h3, body section article h4, body section article h5, body section article h6, body section article table, body section article figure {
@@ -141,12 +159,12 @@ body section article p, body section article ol, body section article ul, body s
 
 @media not all and (max-width: 800px) {
   body section article p, body section article ol, body section article ul, body section article h1, body section article h2, body section article h3, body section article h4, body section article h5, body section article h6, body section article table, body section article figure {
-    padding-left: 3rem;
-    padding-right: 3rem; } }
+    padding-left: 4rem;
+    padding-right: 4rem; } }
 
 body section article p img, body section article ol img, body section article ul img, body section article h1 img, body section article h2 img, body section article h3 img, body section article h4 img, body section article h5 img, body section article h6 img, body section article table img, body section article figure img {
-  margin: 4rem auto;
-  width: 100%; }
+  margin: 2rem auto;
+  max-width: 100%; }
 
 body section article p.no-margin, body section article ol.no-margin, body section article ul.no-margin, body section article h1.no-margin, body section article h2.no-margin, body section article h3.no-margin, body section article h4.no-margin, body section article h5.no-margin, body section article h6.no-margin, body section article table.no-margin, body section article figure.no-margin {
   margin: 0; }
@@ -175,14 +193,25 @@ body section article p.medium, body section article ol.medium, body section arti
   padding-left: 0;
   padding-right: 0; }
 
+body section article p.size-large, body section article ol.size-large, body section article ul.size-large, body section article h1.size-large, body section article h2.size-large, body section article h3.size-large, body section article h4.size-large, body section article h5.size-large, body section article h6.size-large, body section article table.size-large, body section article figure.size-large {
+  padding-left: 0;
+  padding-right: 0; }
+
+body section article p.size-full, body section article ol.size-full, body section article ul.size-full, body section article h1.size-full, body section article h2.size-full, body section article h3.size-full, body section article h4.size-full, body section article h5.size-full, body section article h6.size-full, body section article table.size-full, body section article figure.size-full {
+  padding-left: 0;
+  padding-right: 0; }
+
 body section article p.aligncenter, body section article ol.aligncenter, body section article ul.aligncenter, body section article h1.aligncenter, body section article h2.aligncenter, body section article h3.aligncenter, body section article h4.aligncenter, body section article h5.aligncenter, body section article h6.aligncenter, body section article table.aligncenter, body section article figure.aligncenter {
-  max-width: 40rem; }
+  padding-left: 0;
+  padding-right: 0;
+  max-width: 54rem; }
 
 body section article p.is-resized, body section article ol.is-resized, body section article ul.is-resized, body section article h1.is-resized, body section article h2.is-resized, body section article h3.is-resized, body section article h4.is-resized, body section article h5.is-resized, body section article h6.is-resized, body section article table.is-resized, body section article figure.is-resized {
   text-align: center; }
 
 body section article p.is-resized img, body section article ol.is-resized img, body section article ul.is-resized img, body section article h1.is-resized img, body section article h2.is-resized img, body section article h3.is-resized img, body section article h4.is-resized img, body section article h5.is-resized img, body section article h6.is-resized img, body section article table.is-resized img, body section article figure.is-resized img {
   width: auto;
+  height: auto;
   max-width: 100%; }
 
 @media (max-width: 800px) {
@@ -258,15 +287,20 @@ body hr.title {
   margin-bottom: 5rem;
   border: 0.5px solid #dd7118; }
 
-body figcaption {
+body .wp-block-image {
   text-align: center;
-  margin-top: -3rem;
+  margin-left: auto !important;
+  margin-right: auto !important; }
+
+body .wp-block-image figcaption {
+  text-align: center;
+  margin-top: -2rem;
   margin-bottom: 4rem;
   font-size: 0.9rem;
   color: #747474; }
 
 @media (max-width: 800px) {
-  body figcaption {
+  body .wp-block-image figcaption {
     margin-top: -2rem; } }
 
 body .components-autocomplete figcaption {
@@ -274,7 +308,7 @@ body .components-autocomplete figcaption {
 
 body .footnotes {
   margin: 4rem auto;
-  max-width: 60rem;
+  max-width: 54rem;
   color: #747474; }
 
 body .footnotes ol li p {
