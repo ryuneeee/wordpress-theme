@@ -16,9 +16,10 @@ body::-webkit-scrollbar {
   max-width: 60rem; }
 
 .block-editor-block-list__layout .wp-block-image {
-  margin-bottom: 4rem; }
+  margin: 4rem auto; }
 
 .block-editor-block-list__layout .wp-block-quote {
+  margin: 4rem auto;
   border-left: 0px; }
 
 body {

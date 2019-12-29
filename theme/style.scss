@@ -25,10 +25,11 @@ body::-webkit-scrollbar { display: none; }
     }
     
     .wp-block-image {
-        margin-bottom: 4rem;
+        margin: 4rem auto;
     }
     
     .wp-block-quote {
+        margin: 4rem auto;
         border-left: 0px;
     }
 }
@@ -280,11 +281,6 @@ body {
                 margin: 6rem auto;
                 padding: 0 1rem;
             }
-
-            // .wp-block-quote {
-            //     border-left: 0px;
-            // }
-    
          
             table {
                 margin-top: 3rem;
