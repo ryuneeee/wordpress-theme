@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Caveat|Noto+Serif+KR:400&amp;subset=korean");
+@import url("https://fonts.googleapis.com/css?family=Caveat|Noto+Serif+KR:400&subset=korean");
 html {
   padding: 0;
   margin: 0;
@@ -11,6 +11,15 @@ html {
 
 body::-webkit-scrollbar {
   display: none; }
+
+.block-editor-block-list__layout .wp-block {
+  max-width: 60rem; }
+
+.block-editor-block-list__layout .wp-block-image {
+  margin-bottom: 4rem; }
+
+.block-editor-block-list__layout .wp-block-quote {
+  border-left: 0px; }
 
 body {
   color: #444;
@@ -220,8 +229,7 @@ body section article blockquote {
   font-size: 1.4rem;
   color: #747474;
   margin: 6rem auto;
-  padding: 0 1rem;
-  text-align: center; }
+  padding: 0 1rem; }
 
 body section article table {
   margin-top: 3rem;
@@ -245,8 +253,8 @@ body section article table td {
 
 body hr {
   width: 8rem;
-  margin-top: 10rem;
-  margin-bottom: 10rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
   text-align: right;
   position: relative;
   border: 0.5px solid #a0a0a0; }
@@ -273,9 +281,6 @@ body figcaption {
 body .components-autocomplete figcaption {
   margin-top: auto; }
 
-body .is-resized figcaption {
-  margin-top: auto; }
-
 body .footnotes {
   margin: 4rem auto;
   max-width: 60rem;
@@ -291,3 +296,65 @@ body .footnotes::before {
   display: block;
   position: relative;
   border: 0.5px solid #d6d6d6; }
+
+/* Copyright 2017-2019 Sean Williams
+    This file is part of Modern Footnotes.
+
+    This program is free software; you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation; either version 2 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License along
+    with this program; if not, write to the Free Software Foundation, Inc.,
+    51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+*/
+.modern-footnotes-footnote {
+  padding-left: 2px;
+  padding-right: 2px; }
+
+.modern-footnotes-footnote--selected {
+  background: #eee;
+  border-radius: 2px; }
+
+.modern-footnotes-footnote__connector {
+  background: #000;
+  position: absolute;
+  width: 0.9px; }
+
+.modern-footnotes-footnote a {
+  text-decoration: none; }
+
+.modern-footnotes-footnote__note {
+  display: none;
+  font-size: 80%;
+  color: #777; }
+
+.modern-footnotes-footnote__note--tooltip {
+  position: absolute;
+  border: 1px solid #666;
+  background: #fff;
+  padding: 0.7em 1em;
+  border-radius: 3px;
+  max-width: 300px;
+  box-shadow: 1px 1px 1px #eee;
+  box-sizing: border-box;
+  z-index: 1; }
+
+.modern-footnotes-footnote__note a {
+  display: inline-block;
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: bottom; }
+
+.modern-footnotes-footnote__note--expandable {
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 1em; }
