@@ -306,6 +306,7 @@ body .wp-block-gallery {
   margin: 0px auto; }
 
 body .wp-block-gallery figure {
+  max-width: none;
   padding: 0; }
 
 body .wp-block-gallery .blocks-gallery-grid {
