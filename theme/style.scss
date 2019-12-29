@@ -391,9 +391,21 @@ body {
     }
 
     .wp-block-gallery {
-        margin: 0px auto;
+
+        @media (max-width: 400px) {
+            margin: 0 auto;
+        }
+
+        @media (min-width: 400px) and (max-width: 800px) {
+            margin: 1rem auto;
+        }
+        
+        @media not all and (max-width: 800px){
+            margin: 2rem auto;
+        }
 
         figure {
+            
             max-width: none;
             padding: 0;
         }
