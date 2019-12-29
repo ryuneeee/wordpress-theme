@@ -210,7 +210,6 @@ body section article p.is-resized, body section article ol.is-resized, body sect
   text-align: center; }
 
 body section article p.is-resized img, body section article ol.is-resized img, body section article ul.is-resized img, body section article h1.is-resized img, body section article h2.is-resized img, body section article h3.is-resized img, body section article h4.is-resized img, body section article h5.is-resized img, body section article h6.is-resized img, body section article table.is-resized img, body section article figure.is-resized img {
-  width: auto;
   height: auto;
   max-width: 100%; }
 
