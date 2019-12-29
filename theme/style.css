@@ -145,8 +145,7 @@ body section article p, body section article ol, body section article ul, body s
     padding-right: 3rem; } }
 
 body section article p img, body section article ol img, body section article ul img, body section article h1 img, body section article h2 img, body section article h3 img, body section article h4 img, body section article h5 img, body section article h6 img, body section article table img, body section article figure img {
-  margin: 4rem auto;
-  width: 100%; }
+  margin: 4rem auto; }
 
 @media (max-width: 800px) {
   body section article p img, body section article ol img, body section article ul img, body section article h1 img, body section article h2 img, body section article h3 img, body section article h4 img, body section article h5 img, body section article h6 img, body section article table img, body section article figure img {

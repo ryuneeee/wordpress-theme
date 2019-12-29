@@ -28,4 +28,4 @@
       <p class="to-main"><a href="/">메인으로 돌아가기</a></p>
     </section>
 </body>
-<?php get_footer(); ?>
+<?php wp_footer(); ?>

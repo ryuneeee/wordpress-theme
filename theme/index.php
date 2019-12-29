@@ -1,12 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="stylesheet" href="<?php bloginfo("template_url"); ?>/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Caveat|Noto+Serif+KR:400&amp;subset=korean" rel="stylesheet">
-    <meta charset="utf-8">
-    <title>Ryun</title>
-</head>
+<?php get_header(); ?>
 <body>
     <header>
         <a href="/">Ryun</a>
@@ -33,15 +25,4 @@
 		</ul>
     </section>
 </body>
-
-<script>
-window.onscroll = function() {updateScroll()};
-
-function updateScroll() {
-  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-  var scrolled = (winScroll / height) * 100;
-  document.getElementById("reading-scroll").style.width = scrolled + "%";
-}
-</script>
-</html>
+<?php wp_footer(); ?>
