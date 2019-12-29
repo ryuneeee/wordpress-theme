@@ -18,21 +18,21 @@ html {
 
 body::-webkit-scrollbar { display: none; }
 
-// .block-editor-block-list__layout {
+.block-editor-block-list__layout {
 
-//     .wp-block {
-//         max-width: $content-width;
-//     }
+    .wp-block {
+        max-width: $content-width;
+    }
     
-//     .wp-block-image {
-//         margin: 4rem auto;
-//     }
+    .wp-block-image {
+        margin: 4rem auto;
+    }
     
-//     .wp-block-quote {
-//         margin: 4rem auto;
-//         border-left: 0px;
-//     }
-// }
+    .wp-block-quote {
+        margin: 4rem auto;
+        border-left: 0px;
+    }
+}
 
 body { 
     color: #444;

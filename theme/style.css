@@ -12,6 +12,16 @@ html {
 body::-webkit-scrollbar {
   display: none; }
 
+.block-editor-block-list__layout .wp-block {
+  max-width: 60rem; }
+
+.block-editor-block-list__layout .wp-block-image {
+  margin: 4rem auto; }
+
+.block-editor-block-list__layout .wp-block-quote {
+  margin: 4rem auto;
+  border-left: 0px; }
+
 body {
   color: #444;
   margin: auto;
