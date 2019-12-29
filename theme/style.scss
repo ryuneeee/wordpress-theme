@@ -18,21 +18,21 @@ html {
 
 body::-webkit-scrollbar { display: none; }
 
-.block-editor-block-list__layout {
+// .block-editor-block-list__layout {
 
-    .wp-block {
-        max-width: $content-width;
-    }
+//     .wp-block {
+//         max-width: $content-width;
+//     }
     
-    .wp-block-image {
-        margin: 4rem auto;
-    }
+//     .wp-block-image {
+//         margin: 4rem auto;
+//     }
     
-    .wp-block-quote {
-        margin: 4rem auto;
-        border-left: 0px;
-    }
-}
+//     .wp-block-quote {
+//         margin: 4rem auto;
+//         border-left: 0px;
+//     }
+// }
 
 body { 
     color: #444;
@@ -181,18 +181,19 @@ body {
 
                 img {
                     margin: 4rem auto;
+                    width: 100%;
 
 
-                    @media (max-width: 800px) {
-                        padding-left: 0;  
-                        padding-right: 0;  
+                    // @media (max-width: 800px) {
+                    //     padding-left: 0;  
+                    //     padding-right: 0;  
 
-                        width: 100vw;
-                        position: relative;
-                        left: 50%;
-                        right: 50%;
-                        margin: 2rem -50vw;
-                    }
+                    //     width: 100vw;
+                    //     position: relative;
+                    //     left: 50%;
+                    //     right: 50%;
+                    //     margin: 2rem -50vw;
+                    // }
 
                 }
 

@@ -12,16 +12,6 @@ html {
 body::-webkit-scrollbar {
   display: none; }
 
-.block-editor-block-list__layout .wp-block {
-  max-width: 60rem; }
-
-.block-editor-block-list__layout .wp-block-image {
-  margin: 4rem auto; }
-
-.block-editor-block-list__layout .wp-block-quote {
-  margin: 4rem auto;
-  border-left: 0px; }
-
 body {
   color: #444;
   margin: auto;
@@ -145,17 +135,8 @@ body section article p, body section article ol, body section article ul, body s
     padding-right: 3rem; } }
 
 body section article p img, body section article ol img, body section article ul img, body section article h1 img, body section article h2 img, body section article h3 img, body section article h4 img, body section article h5 img, body section article h6 img, body section article table img, body section article figure img {
-  margin: 4rem auto; }
-
-@media (max-width: 800px) {
-  body section article p img, body section article ol img, body section article ul img, body section article h1 img, body section article h2 img, body section article h3 img, body section article h4 img, body section article h5 img, body section article h6 img, body section article table img, body section article figure img {
-    padding-left: 0;
-    padding-right: 0;
-    width: 100vw;
-    position: relative;
-    left: 50%;
-    right: 50%;
-    margin: 2rem -50vw; } }
+  margin: 4rem auto;
+  width: 100%; }
 
 body section article p.no-margin, body section article ol.no-margin, body section article ul.no-margin, body section article h1.no-margin, body section article h2.no-margin, body section article h3.no-margin, body section article h4.no-margin, body section article h5.no-margin, body section article h6.no-margin, body section article table.no-margin, body section article figure.no-margin {
   margin: 0; }
