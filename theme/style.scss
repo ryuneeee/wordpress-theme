@@ -247,10 +247,7 @@ body {
                 &.alignwide {
                     padding-left: 0;
                     padding-right: 0;
-                    max-width: 70%;
-                    @media (max-width: 1200px) {
-                        max-width: 100%;
-                    }
+                    max-width: 100rem;
                 }
 
                 &.medium {
@@ -401,23 +398,6 @@ body {
         .blocks-gallery-grid {
             margin: 1rem;
             max-width: none;
-
-
-            // @media (max-width: 900px) {
-            //     display: inline;
-                
-            //     .blocks-gallery-item {
-            //         margin: 0;
-            //         width: 100%;
-            //         img {
-            //             flex: 1;
-            //             -o-object-fit: cover;
-            //             object-fit: cover;
-            //             margin-top: 0px;
-            //             margin-bottom: 1rem;
-            //         }
-            //     }
-            // }
         }
     }
 

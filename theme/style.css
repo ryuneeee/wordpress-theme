@@ -183,11 +183,7 @@ body section article p.alignfull img, body section article ol.alignfull img, bod
 body section article p.alignwide, body section article ol.alignwide, body section article ul.alignwide, body section article h1.alignwide, body section article h2.alignwide, body section article h3.alignwide, body section article h4.alignwide, body section article h5.alignwide, body section article h6.alignwide, body section article table.alignwide, body section article figure.alignwide {
   padding-left: 0;
   padding-right: 0;
-  max-width: 70%; }
-
-@media (max-width: 1200px) {
-  body section article p.alignwide, body section article ol.alignwide, body section article ul.alignwide, body section article h1.alignwide, body section article h2.alignwide, body section article h3.alignwide, body section article h4.alignwide, body section article h5.alignwide, body section article h6.alignwide, body section article table.alignwide, body section article figure.alignwide {
-    max-width: 100%; } }
+  max-width: 100rem; }
 
 body section article p.medium, body section article ol.medium, body section article ul.medium, body section article h1.medium, body section article h2.medium, body section article h3.medium, body section article h4.medium, body section article h5.medium, body section article h6.medium, body section article table.medium, body section article figure.medium {
   padding-left: 0;
