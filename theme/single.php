@@ -25,7 +25,7 @@
         endwhile;
         endif;
       ?>
-      <p class="to-main"><a href="/">메인으로 돌아가기</a></p>
+      <p class="to-main"><a href="/">Go Back</a></p>
     </section>
 </body>
 <?php wp_footer(); ?>
