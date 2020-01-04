@@ -156,16 +156,16 @@ body section article h6 {
   font-size: 1rem; }
 
 body section article h1, body section article h2, body section article h3 {
-  margin-top: 4rem;
+  margin-top: 2rem;
   text-align: initial; }
 
 body section article h4, body section article h5, body section article h6 {
-  margin-top: 3rem;
+  margin-top: 1rem;
   margin-bottom: 0;
   text-align: initial; }
 
 body section article ol li, body section article ul li {
-  margin: 0 2rem; }
+  margin: 1rem 2rem; }
 
 body section article p, body section article ol, body section article ul, body section article h1, body section article h2, body section article h3, body section article h4, body section article h5, body section article h6, body section article table, body section article figure {
   margin-left: auto;
@@ -266,9 +266,9 @@ body section article .date {
 
 body section article blockquote {
   font-family: 'Caveat', 'Noto Serif KR';
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   color: #747474;
-  margin: 6rem auto;
+  margin: 4rem auto;
   padding: 0 1rem; }
 
 body section article table {
