@@ -262,7 +262,7 @@ body section article .date {
   font-size: 0.8rem;
   text-align: center;
   color: #919191;
-  margin: 2em auto; }
+  margin: 2em auto 4rem auto; }
 
 body section article blockquote {
   font-family: 'Caveat', 'Noto Serif KR';
