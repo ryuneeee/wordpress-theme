@@ -1,5 +1,5 @@
 @charset "utf-8";
-@import url('https://fonts.googleapis.com/css?family=Caveat|Noto+Serif+KR:400&subset=korean');
+//@import url('https://fonts.googleapis.com/css?family=Caveat|Noto+Serif+KR:500&subset=korean');
 
 // Our variables
 $base-font-family: 'Noto Serif KR', sans-serif;
@@ -10,7 +10,8 @@ html {
     margin: 0;
     -webkit-text-size-adjust: 100%;
     line-height: 1.7rem;
-
+    letter-spacing: -0.02rem;
+    word-spacing: -0.05rem;
     @media (min-width: 1500px) {
         line-height: 1.9rem;
     }
@@ -64,7 +65,7 @@ body::-webkit-scrollbar { display: none; }
     }
 }
 
-body { 
+body {
     color: #444;
     margin: auto;
     font-family: $base-font-family;
@@ -72,11 +73,20 @@ body {
     overflow: auto;
     padding-bottom: 4rem;
 
+    @media (prefers-color-scheme: dark){
+        color: #BBB;
+        background: #222;
+    }
+
     a {
         color: #000;
         text-decoration: none;
         &:hover {
             color: rgb(221, 113, 24);
+        }
+
+        @media (prefers-color-scheme: dark){
+            color: #BBB;
         }
     }
 
@@ -91,6 +101,10 @@ body {
         margin: auto;
         border-bottom: solid 1px #EEE;
         z-index: 10;
+
+        @media (prefers-color-scheme: dark){
+            background: #222;
+        }
 
         .progress-container {
             top: 0;
