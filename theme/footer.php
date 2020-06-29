@@ -20,7 +20,7 @@ window.addEventListener('DOMContentLoaded', () => {
             }
         });
     }, {
-        rootMargin: `0px 0px -50% 0px`,
+        rootMargin: `0px 0px -70% 0px`,
     });
 
     // Track all sections that have an `id` applied
