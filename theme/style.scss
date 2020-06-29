@@ -96,7 +96,7 @@ body {
             top: 0;
             left: 0;
             position: fixed;
-            z-index: 1;
+            z-index: 1000;
             width: calc(100% + 3rem);
             
             #reading-scroll {
@@ -108,6 +108,53 @@ body {
     }
 
     section {
+
+        #toc_container {
+            top: 20%;
+            font-size: 0.8rem;
+            float: left;
+            position: fixed;
+            margin: 2rem;
+            line-height: 1.6rem;
+            max-width: 30rem;
+            z-index: 10;
+
+            @media all and (max-width: 1600px){
+                display: none;
+            }
+
+            .toc_list {
+            }
+
+            a {
+                color: #A1A1A1;
+
+                //&:hover {
+                //    opacity: 100%;
+                //    color: rgb(221, 113, 24);
+                //}
+            }
+
+            ul {
+                list-style: none;
+                padding: 0;
+                li {
+                    text-decoration: none;
+                    padding: 0 0.6rem;
+                    margin: 0 0.6rem;
+                    border-left: #DDD solid 2px;
+                    &.toc_active, &:hover {
+                        > a {
+                            font-weight: bold;
+                            color: rgb(221, 113, 24);
+                        }
+                        border-left: rgb(221, 113, 24) solid 2px;
+                    }
+                }
+
+            }
+
+        }
 
         ul.posts {
             margin: 4rem auto;
@@ -166,8 +213,8 @@ body {
         }
 
         .to-main {
-            padding-top: 4rem;
-            padding-bottom: 4rem;
+            padding-top: 20rem;
+            padding-bottom: 10rem;
             text-align: center;
             a {
                 color: rgb(221, 113, 24);
@@ -272,6 +319,8 @@ body {
                 }
     
                 &.alignfull {
+                    position: relative;
+                    z-index: 999;
                     img {
                         margin-bottom: 2rem;
                     }
@@ -282,6 +331,9 @@ body {
                 }
 
                 &.alignwide {
+                    position: relative;
+                    z-index: 999;
+
                     padding-left: 0;
                     padding-right: 0;
                     max-width: 100rem;
@@ -298,6 +350,8 @@ body {
                 }
 
                 &.size-full {
+                    position: relative;
+                    z-index: 999;
                     padding-left: 0;
                     padding-right: 0;
                 }

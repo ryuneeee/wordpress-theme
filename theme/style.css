@@ -71,13 +71,47 @@ body header .progress-container {
   top: 0;
   left: 0;
   position: fixed;
-  z-index: 1;
+  z-index: 1000;
   width: calc(100% + 3rem); }
 
 body header .progress-container #reading-scroll {
   height: 2px;
   background: #fa2d5a;
   width: 0%; }
+
+body section #toc_container {
+  top: 20%;
+  font-size: 0.8rem;
+  float: left;
+  position: fixed;
+  margin: 2rem;
+  line-height: 1.6rem;
+  max-width: 30rem;
+  z-index: 10; }
+
+@media all and (max-width: 1600px) {
+  body section #toc_container {
+    display: none; } }
+
+body section #toc_container a {
+  color: #A1A1A1; }
+
+body section #toc_container ul {
+  list-style: none;
+  padding: 0; }
+
+body section #toc_container ul li {
+  text-decoration: none;
+  padding: 0 0.6rem;
+  margin: 0 0.6rem;
+  border-left: #DDD solid 2px; }
+
+body section #toc_container ul li.toc_active, body section #toc_container ul li:hover {
+  border-left: #dd7118 solid 2px; }
+
+body section #toc_container ul li.toc_active > a, body section #toc_container ul li:hover > a {
+  font-weight: bold;
+  color: #dd7118; }
 
 body section ul.posts {
   margin: 4rem auto;
@@ -121,8 +155,8 @@ body section .pagination .page-numbers.prev, body section .pagination .page-numb
   padding: 1rem; }
 
 body section .to-main {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+  padding-top: 20rem;
+  padding-bottom: 10rem;
   text-align: center; }
 
 body section .to-main a {
@@ -198,6 +232,8 @@ body section article p.no-margin img, body section article ol.no-margin img, bod
   margin: 0; }
 
 body section article p.alignfull, body section article ol.alignfull, body section article ul.alignfull, body section article h1.alignfull, body section article h2.alignfull, body section article h3.alignfull, body section article h4.alignfull, body section article h5.alignfull, body section article h6.alignfull, body section article table.alignfull, body section article figure.alignfull {
+  position: relative;
+  z-index: 999;
   padding-left: 0;
   padding-right: 0;
   max-width: 100%; }
@@ -206,6 +242,8 @@ body section article p.alignfull img, body section article ol.alignfull img, bod
   margin-bottom: 2rem; }
 
 body section article p.alignwide, body section article ol.alignwide, body section article ul.alignwide, body section article h1.alignwide, body section article h2.alignwide, body section article h3.alignwide, body section article h4.alignwide, body section article h5.alignwide, body section article h6.alignwide, body section article table.alignwide, body section article figure.alignwide {
+  position: relative;
+  z-index: 999;
   padding-left: 0;
   padding-right: 0;
   max-width: 100rem; }
@@ -219,6 +257,8 @@ body section article p.size-large, body section article ol.size-large, body sect
   padding-right: 0; }
 
 body section article p.size-full, body section article ol.size-full, body section article ul.size-full, body section article h1.size-full, body section article h2.size-full, body section article h3.size-full, body section article h4.size-full, body section article h5.size-full, body section article h6.size-full, body section article table.size-full, body section article figure.size-full {
+  position: relative;
+  z-index: 999;
   padding-left: 0;
   padding-right: 0; }
 

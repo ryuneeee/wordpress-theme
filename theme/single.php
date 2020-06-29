@@ -1,4 +1,3 @@
-
 <?php
 	if (have_posts()) :
 	while (have_posts()) : the_post(); 
@@ -28,4 +27,4 @@
       <p class="to-main"><a href="/">Go Back</a></p>
     </section>
 </body>
-<?php wp_footer(); ?>
+<?php get_footer(); ?>
